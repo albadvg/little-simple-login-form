@@ -5,27 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="<!-- url envio datos -->" method="">
+    <form action="" method="">
+        <h1>REGISTRO</h1>
         <ul>
             <li>
                 <label for="nombre">Nombre de usuario</label>
-                <input type="text " id="nombre" name="nombre-usuario">
+                <input type="text " id="nombre" name="nombre-usuario" required>
             </li>
             <li>
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email-usuario">
+                <input type="email" id="email" name="email-usuario" required>
             </li>
             <li>
                 <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña">
+                <input type="password" name="contraseña" id="contraseña" required>
             </li>
             <li>
                 <label for="confirmar-contraseña">Confirme contraseña</label>
-                <input type="password" name="confirmar-contraseña" id="confirmar-contraseña">
+                <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" required>
+            </li>
+            <li>
+                <button type="submit">Enviar</button>
             </li>
         </ul>
     </form>
 </body>
+<script src="js/script.js"></script>
 </html>
