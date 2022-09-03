@@ -48,10 +48,9 @@ form{
 }
 
 .select-log-option{
-    background-color: #999999;
     margin-bottom: 2rem;
     display: flex;
-    border-radius: 2rem 2rem 0 0 ;
+
 }
 
 .select-log-option > div {
@@ -59,12 +58,24 @@ form{
     height: 100%;
     text-align: center;
     padding: 1.5rem;
+    background-color: #999999;
+}
+.select-log-option > div:first-of-type {
+    border-radius: 2rem 0 0 0;
+}
+.select-log-option > div:last-of-type {
+    border-radius: 0 2rem 0 0;
+}
+
+.pestana-inactiva{
+    background-color: rgb(178, 176, 176) !important; 
 }
 
 h2{
     font-weight: 700;
     font-size: 1rem;
 }
+
 ul{
     min-width: 13vw;
     max-width: 300px;
