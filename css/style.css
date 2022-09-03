@@ -43,14 +43,14 @@ body{
 
 form{
     background-color: #999999;
-    border-radius: 3rem;
+    border-radius: 0 0 3rem 3rem;
     min-width: 25vw;
+    padding-top: 2.5rem;
 }
 
 .select-log-option{
-    margin-bottom: 2rem;
     display: flex;
-
+    cursor: pointer;
 }
 
 .select-log-option > div {
@@ -141,3 +141,4 @@ button:hover{
 .hidden{
     display: none;
 }
+

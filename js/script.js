@@ -14,21 +14,6 @@ pestanaCrearCuenta.addEventListener('click', cambiarPestana)
 
 
 //funciones
-/* function cambiarPestaña() {
-    if (this.classList.contains('pestaña-inactiva')){
-        this.classList.remove('pestaña-inactiva');
-        this.
-        if(formularioIniciarSesion.classList.contains('hidden')) {
-            formularioIniciarSesion.classList.remove('hidden');
-            formularioCrearCuenta.classList.add('hidden')
-        } else {
-            formularioCrearCuenta.classList.remove('hidden');
-            formularioIniciarSesion.classList.add('hidden')
-        }
-    } else {
-        return;
-    }
-} */
 
 function cambiarPestana()  {
     if (this === pestanaIniciarSesion && this.classList.contains('pestana-inactiva')){
@@ -41,5 +26,7 @@ function cambiarPestana()  {
         pestanaIniciarSesion.classList.add('pestana-inactiva')
         formularioCrearCuenta.classList.remove('hidden');
         formularioIniciarSesion.classList.add('hidden');
+    } else {
+        return;
     }
 }
