@@ -41,7 +41,8 @@ body{
     color: white;
 }
 
-form{
+
+.contenedor{
     background-color: #999999;
     border-radius: 0 0 3rem 3rem;
     min-width: 25vw;
@@ -69,6 +70,10 @@ form{
 
 .pestana-inactiva{
     background-color: rgb(178, 176, 176) !important; 
+    transition: background-color .5s;
+}
+.pestana-inactiva:hover {
+    background-color: #989898 !important;
 }
 
 h2{
@@ -101,11 +106,13 @@ input{
     padding: .8rem;
     font-size: .9rem;
     font-weight: 600;
-    color:rgb(63, 63, 63) ;
+    color:rgb(63, 63, 63);
+    transition: transform .5s;
+    outline: none;
 }
 
 input:focus{
-    outline: 2px solid rgb(255, 255, 255) ;
+    transform: scale(1.03) ;
 }
 
 input#terminos {
@@ -129,16 +136,21 @@ button{
     background-color: #ffffff;
     color: rgb(75, 75, 75);
     cursor: pointer;
+    transition: background-color .5s, color .5s, transform .4s;
 
 }
 
 button:hover{
     background-color: #2e2e2e;
-    outline: 2px solid #2e2e2e;
     color: white;
+    transform: scale(1.05);
 }
 
-.hidden{
+button:active{
+    transform: scale(1)
+}
+
+form.hidden{
     display: none;
 }
 
