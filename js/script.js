@@ -1,6 +1,6 @@
 //variables
-var pestanaIniciarSesion = document.querySelector('.pestana-iniciar-sesion');
-var pestanaCrearCuenta = document.querySelector('.pestana-crear-cuenta');
+var pestanaIniciarSesion = document.querySelector('#pestana-iniciar-sesion');
+var pestanaCrearCuenta = document.querySelector('#pestana-crear-cuenta');
 var formularioIniciarSesion = document.querySelector('#iniciar-sesion');
 var formularioCrearCuenta = document.querySelector('#crear-cuenta')
 
@@ -18,7 +18,7 @@ function cambiarPestana()  {
         this.classList.remove('pestana-inactiva');
         pestanaCrearCuenta.classList.add('pestana-inactiva')
         formularioIniciarSesion.classList.remove('hidden');
-        formularioCrearCuenta.classList.add('hidden');s
+        formularioCrearCuenta.classList.add('hidden');
     } else if (this === pestanaCrearCuenta && this.classList.contains('pestana-inactiva')) {
         this.classList.remove('pestana-inactiva');
         pestanaIniciarSesion.classList.add('pestana-inactiva')
